@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-27 17:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Translators: DON'T TRANSLATE THIS
+#: djangosite/settings.py:130
+msgid "Malay"
+msgstr ""
+
+#: homepage/templates/includes/footer.html:8
+#, python-format
+msgid "<span>%(sitename)s</span> was made with ❤️ and ☕️."
+msgstr ""
+
+#: homepage/templates/includes/footer.html:9 homepage/views.py:38
+#: homepage/views.py:39
+msgid "Privacy Policy"
+msgstr ""
+
+#: homepage/views.py:11
+msgid "Djangosite sample app"
+msgstr ""
+
+#: homepage/views.py:12
+msgid "Djangosite description"
+msgstr ""
+
+#: homepage/views.py:24
+msgid "Page not Found - 404"
+msgstr ""
+
+#: homepage/views.py:25
+msgid "Page not Found - 404. Try search or go to the homepage"
+msgstr ""
