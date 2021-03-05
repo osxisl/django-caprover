@@ -1,0 +1,51 @@
+{% load i18n %}
+
+<a class="skip-link" href="#maincontent">Skip to main</a>
+<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/{% if LANGUAGE_CODE != 'en' %}{{ LANGUAGE_CODE }}/{% endif %}">{{ site_name }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav();">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav-collapse" class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        	<style>
+        		.navbar-light .navbar-nav .nav-link {
+   				 color:rgba(0, 0, 0, .7);
+				}
+				.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    			color:rgba(0, 0, 0, .95);
+				}
+        	</style>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">MenuItem 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MenuItem 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MenuItem 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">MenuItem 4</a>
+            </li> -->
+            
+        </ul>
+        <ul class="navbar-nav my-1 ml-auto">
+        	<li class="nav-item" style="width: 180px; margin-right: 24px;">
+                {% include "includes/languageswitcher.html" %}
+            </li>
+        </ul>
+
+        <!-- <form class="form-inline my-2 my-lg-0" style="padding-left: 8px;">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    </div>
+</nav>
+<script>
+let nav = document.getElementById('nav-collapse');
+
+function toggleNav() {
+    nav.classList.toggle('show');
+}
+</script>

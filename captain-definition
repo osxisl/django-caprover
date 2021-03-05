@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM python:3.8.3-alpine",
+    "RUN apk update && apk upgrade && apk add --no-cache make g++ bash git openssh postgresql-dev curl python3-dev musl-dev",
+    "RUN apk add gettext",
+    "RUN mkdir -p /usr/src/app",
+    "WORKDIR /usr/src/app",
+    "COPY . /usr/src/app",
+    "RUN pip install --upgrade pip",
+    "RUN pip install -r requirements.txt",
+    "COPY ./utils/ /usr/src/utils",
+    "EXPOSE 8001",
+    "CMD sh /usr/src/utils/run.sh"
+  ]
+}
