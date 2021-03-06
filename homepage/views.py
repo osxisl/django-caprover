@@ -44,7 +44,27 @@ def privacy(request):
     }
     return render(request, 'homepage/privacy.html', context)
 
+def about(request):
+    site = get_current_site(request)
+    title = _('About Us')
+    description = _('About Us Page') + ' - ' + site.name
+    context = {
+        'site_name' : site.name,
+        'title' :  title,
+        'description' : description,
+    }
+    return render(request, 'homepage/about.html', context)
 
+def contact(request):
+    site = get_current_site(request)
+    title = _('Contact Us')
+    description = _('Contact Us Page') + ' - ' + site.name
+    context = {
+        'site_name' : site.name,
+        'title' :  title,
+        'description' : description,
+    }
+    return render(request, 'homepage/contact.html', context)
 
 
 

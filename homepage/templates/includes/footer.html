@@ -6,7 +6,9 @@
       <div class="col-12 text-center">
         <p>
           {% blocktrans with sitename=site_name %}<span>{{ sitename }}</span> was made with ❤️ and ☕️.{% endblocktrans %}<br />
-          <a href="/{% if LANGUAGE_CODE != 'en' %}{{ LANGUAGE_CODE }}/{% endif %}privacy-policy/" class="text-dark">{% trans 'Privacy Policy' %}</a>
+          <a href="/{% if LANGUAGE_CODE != 'en' %}{{ LANGUAGE_CODE }}/{% endif %}about/" class="text-dark mx-2">{% trans 'About' %}</a>
+          <a href="/{% if LANGUAGE_CODE != 'en' %}{{ LANGUAGE_CODE }}/{% endif %}privacy-policy/" class="text-dark mx-2">{% trans 'Privacy Policy' %}</a>
+          <a href="/{% if LANGUAGE_CODE != 'en' %}{{ LANGUAGE_CODE }}/{% endif %}contact/" class="text-dark mx-2">{% trans 'Contact' %}</a>
         </p>
       </div>
     </div>

@@ -33,6 +33,8 @@ urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('', cache_page(cache_homepage)(homepage_views.index), name='index'),
     path('privacy-policy/' , cache_page(60*60*24)(homepage_views.privacy), name='privacy'),
+    path('about/' , cache_page(60*60*24)(homepage_views.about), name='about'),
+    path('contact/' , cache_page(60*60*24)(homepage_views.contact), name='contact'),
     prefix_default_language=False,
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
