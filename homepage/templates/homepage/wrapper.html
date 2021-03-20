@@ -125,6 +125,11 @@
         .mx-2 {margin-left: 0.5rem!important; margin-right: 0.5rem!important; }
     </style>
 
+    {% if LANGUAGE_CODE == 'ar' or LANGUAGE_CODE == 'he' %}
+    <style type="text/css">
+        html {direction: rtl;}
+    </style>
+    {% endif %}
     <!-- inline scripts -->
 
     {% endblock %}

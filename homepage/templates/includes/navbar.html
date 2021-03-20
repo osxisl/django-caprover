@@ -7,7 +7,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div id="nav-collapse" class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav {% if LANGUAGE_CODE == 'ar' or LANGUAGE_CODE == 'he' %}ml-auto{% else %}mr-auto{% endif %}">
         	<style>
         		.navbar-light .navbar-nav .nav-link {
    				 color:rgba(0, 0, 0, .7);
@@ -30,7 +30,7 @@
             </li> -->
             
         </ul>
-        <ul class="navbar-nav my-1 ml-auto">
+        <ul class="navbar-nav my-1 {% if LANGUAGE_CODE == 'ar' or LANGUAGE_CODE == 'he' %}mr-auto{% else %}ml-auto{% endif %}">
         	<li class="nav-item" style="width: 180px; margin-right: 24px;">
                 {% include "includes/languageswitcher.html" %}
             </li>
